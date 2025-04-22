@@ -1,0 +1,174 @@
+/* Basic reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+text-align:left;
+  font-family: 'Gilda Display', serif;
+  background-color: #fffaf0;
+  color: #333;
+}
+
+/* Banner styling */
+.banner {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Marquee images */
+marquee img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+/* Gallery styling */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+text-align:center;
+  gap: 1rem;
+  padding: 1rem;
+}
+/* Menyusun ukuran gambar supaya lebih pas dan tidak terpotong */
+.gallery .item img {
+width: 100%;
+height: 100%; /* Atur agar gambar mengikuti ukuran container */
+object-fit: contain; /* Memastikan gambar tetap proporsional dan tidak terpotong */
+border-radius: 4px;
+transition: transform 0.3s ease;
+}
+
+/* Tambahkan margin pada bagian caption agar teks lebih rapi */
+.gallery .item p {
+margin-top: 0.5rem;
+font-size: 18px;
+color: #333;
+}
+
+/* Jika Anda ingin mengubah gambar hanya untuk kategori tertentu (misal: Necklaces) */
+.gold-gallery .item img,
+.diamond-gallery .item img,
+.ring-gallery .item img,
+.necklace-gallery .item img,
+.bracelet-gallery .item img,
+.earring-gallery .item img,
+.anklet-gallery .item img, {
+height: 200px; /* Gambar dengan tinggi tertentu */
+object-fit: contain; /* Gambar tidak terpotong dan tetap proporsional */
+}
+
+
+.item {
+  flex: 1 1 calc(25% - 1rem);
+  max-width: calc(25% - 1rem);
+box-sizing: border-box;
+width: 200px;
+  text-align: center;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.item a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.item img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.item:hover img {
+  transform: scale(1.05);
+}
+
+.item p {
+  margin-top: 0.5rem;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Link styling */
+.a {
+  font-size: 23px;
+  padding-left: 2rem;
+  margin: 1rem 0;
+}
+
+/* Heading styles */
+h1.heading {
+  color: #FFD700;
+font-size:2rem;
+  background-color: #212f3c;
+  padding: 1rem;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+h2 {
+  text-align:center;
+  font-size: 2rem;
+  color: black;
+  margin: 1.5rem 0;
+}
+
+/* Paragraph styling */
+p {
+  padding: 0 2rem;
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.6;
+  margin: 1rem 0;
+  max-width:none;
+}
+/* Footer styling */
+.site-footer {
+background-color: #212f3c; /* Dark background for footer */
+color: #fff; /* White text */
+padding: 2rem; /* Spacing around footer */
+width: 100%; /* Ensure full width */
+box-sizing: border-box; /* Include padding in total width */
+}
+
+.site-footer p {
+margin: 0.5rem 0; /* Vertical margin for paragraphs */
+text-align: left; /* Explicitly align text left in paragraphs */
+}
+
+.site-footer a {
+color: #FFD700; /* Link color */
+text-decoration: none; /* No underline on links */
+}
+
+.site-footer a:hover {
+text-decoration: underline; /* Underline links on hover */
+}
+
+.site-footer .item {
+margin-top: 1rem; /* Space between text and image */
+}
+
+.site-footer .item img {
+width: 100px; /* Adjust image width */
+height: auto; /* Maintain aspect ratio */
+display: block;
+margin-top: 1rem; /* Margin for spacing */
+}
